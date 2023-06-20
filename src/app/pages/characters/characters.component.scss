@@ -1,0 +1,30 @@
+@import "../../../styles.scss";
+
+h5 {
+
+    text-align: center;
+    margin: 8px;
+    color: $crawl;
+    text-shadow: 0 0 3px black, 1px 1px 5px $purple;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h3{
+  color: $crawl;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  margin: 10px;
+  text-shadow: 0 0 3px black, 1px 1px 5px $purple;
+
+}
+
+.characters-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

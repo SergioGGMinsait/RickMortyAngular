@@ -1,0 +1,15 @@
+<h3>CHARACTERS</h3>
+
+<h5>count: {{ countResults }} characters</h5>
+<h5 *ngIf="favoriteCharacter">Mi personaje favo es {{favoriteCharacter}}</h5>
+<div *ngIf="characters.length" class="characters-container">
+  <ul class="characters-container">
+    <li *ngFor="let character of characters">
+      <app-character-item-list
+        [character]="character"
+        (setFavorite)="handleFavorite($event)"
+      ></app-character-item-list>
+    </li>
+  </ul>
+    <!-- Input de angular. los inputs van con corchetes!!! -->
+</div>

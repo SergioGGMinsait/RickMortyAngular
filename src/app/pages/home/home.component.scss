@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+
+
+.photo {
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    width: 80%;
+}
+
+
+.intro {
+    color: $crawl;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
