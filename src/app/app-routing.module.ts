@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CharacterDetailComponent } from './pages/character-detail/character-detail.component';
 
 const routes: Routes = [
   {
@@ -15,7 +14,13 @@ const routes: Routes = [
         (m) => m.CharactersModule
       ),
   },
-  { path: 'characters/:idCharacter', component: CharacterDetailComponent },
+  {
+    path: 'characters/:idCharacter',
+    loadChildren: () =>
+      import('./pages/character-detail/character-detail.module').then(
+        (m) => m.CharacterDetailModule
+      ),
+  },
 
   {
     path: ``,
